@@ -13,10 +13,23 @@
 
 3. リポジトリを選択します
 
-4. デプロイするブランチ、公開するディレクトリを設定します
+4. デプロイするブランチ、ビルドコマンド、公開するディレクトリなどを設定します
 
-5. netlify formを利用するフォームにnetlify属性を追加します。
+5. Deploy siteします
 
-6. GitHubリポジトリにプッシュします
+6. URLが払い出されるので、Site settings → General からサイト名を変更します
 
-7. 
+7. Site settings → Forms から通知方法（メール、 slack）を設定します
+
+8. netlify formsを利用するフォームにnetlify属性を追加します  
+この時、`/`から始まるパスをaction属性を設定すると成功画面を設定できます。
+
+9. デプロイするブランチにプッシュします
+
+10. netlify forms機能へのWelcomeメールが届きます
+
+## デモ
+
+[nycreation-form.netlify.app](https://nycreation-form.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c03a9622-d554-46ce-9080-2370a444dae4/deploy-status)](https://app.netlify.com/sites/nycreation-form/deploys)
