@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello netlify</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css">
+</head>
+<body>
+  <main>
+    <h1>Hello netlify!</h1>
+    <form name="myform" action="POST" class="grid gap-4" netlify>
+      <div class="flex gap-2">
+        <label for="user_name" class="w-1/4 flex items-center">お名前</label><input type="text" name="user_name" id="user_name" class="w-3/4 m-0">
+      </div>
+      <div class="flex gap-2">
+        <label for="user_name" class="w-1/4 flex items-center">メッセージ</label><textarea type="text" name="user_message" id="user_message" class="w-3/4 m-0"></textarea>
+      </div>
+      <div class="flex gap-2 mt-4">
+        <div class="w-1/4"></div>
+        <input type="submit" value="送信する" class="bg-gray-300 m-0">
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>
